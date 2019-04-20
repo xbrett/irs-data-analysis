@@ -1,0 +1,448 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>IRS 501(c)(3) Data Analysis</title>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+  </head>
+  <body class="body">
+    <div class="container">
+      <nav class="navbar-expand-sm navbar-light bg-secondary">
+        <div class="col-4">
+          <a class="navbar-brand" href="/"><h1>IRS 501(c)(3) Data Analysis</h1></a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h2 class="d-flex justify-content-center my-3">
+          Exemption Not Reported
+        </h2>
+        <div class="container graph" id="plot1">
+          <script>
+          anychart.onDocumentReady(function() {
+            var data = [
+              ["Investment Income", 6259.3009],
+              ["Gross Income Members", 406.7951],
+              ["Gross Income Others", 1009.5045],
+              ["Net Rental Income", 10170.9831],
+              ["Fundrasing Income", 1690.2763],
+              ["Gaming Income", 337.6291],
+              ["Sales Income", 2800.1725],
+              ["Gross Income from Interest", 0],
+              ["Other Income", 0],
+            ];
+
+            var chart = anychart.pie();
+            chart.data(data);
+            chart.sort("desc");
+            chart.legend().position("right");
+            chart.legend().itemsLayout("vertical");
+            chart.container('plot1');
+            chart.draw();
+          });
+          </script>
+        </div>
+        <p></p>
+        <h2 class="d-flex justify-content-center my-3">
+          Church
+        </h2>
+        <div class="container graph" id="plot2">
+          <script>
+          anychart.onDocumentReady(function() {
+            var data = [
+              ["Investment Income", 76810.2410],
+              ["Gross Income Members", 6.4671],
+              ["Gross Income Others", 88.2769],
+              ["Net Rental Income", 11422.5251],
+              ["Fundrasing Income", 0],
+              ["Gaming Income", 958.1044],
+              ["Sales Income", 25794.3175],
+              ["Gross Income from Interest", 13963.1120],
+              ["Other Income", 7535.0834],
+            ];
+
+            var chart = anychart.pie();
+            chart.data(data);
+            chart.sort("desc");
+            chart.legend().position("right");
+            chart.legend().itemsLayout("vertical");
+            chart.container('plot2');
+            chart.draw();
+          });
+          </script>
+        </div>
+        <h2 class="d-flex justify-content-center my-3">
+          School
+        </h2>
+        <div class="container graph" id="plot3">
+          <script>
+          anychart.onDocumentReady(function() {
+            var data = [
+              ["Investment Income", 780630.0897],
+              ["Gross Income Members", 0],
+              ["Gross Income Others", 0],
+              ["Net Rental Income", 75779.2594],
+              ["Fundrasing Income", 11446.4508],
+              ["Gaming Income", 695.9533],
+              ["Sales Income", 39720.2962],
+              ["Gross Income from Interest", 1902433.7439],
+              ["Other Income", 341520.4841]
+            ];
+
+            var chart = anychart.pie();
+            chart.data(data);
+            chart.sort("desc");
+            chart.legend().position("right");
+            chart.legend().itemsLayout("vertical");
+            chart.container('plot3');
+            chart.draw();
+          });
+          </script>
+        </div>
+        <h2 class="d-flex justify-content-center my-3">
+          Hospital Organization
+        </h2>
+        <div class="container graph" id="plot4">
+          <script>
+          anychart.onDocumentReady(function() {
+            var data = [
+              ["Investment Income", 2110006.9171],
+              ["Gross Income Members", 0],
+              ["Gross Income Others", 0],
+              ["Net Rental Income", 292035.7952],
+              ["Fundrasing Income", 1767.7039],
+              ["Gaming Income", 381.7870],
+              ["Sales Income", 299795.3221],
+              ["Gross Income from Interest", 521793.9851],
+              ["Other Income", 225571.8105]
+            ];
+
+            var chart = anychart.pie();
+            chart.data(data);
+            chart.sort("desc");
+            chart.legend().position("right");
+            chart.legend().itemsLayout("vertical");
+            chart.container('plot4');
+            chart.draw();
+          });
+          </script>
+        </div>
+        <h2 class="d-flex justify-content-center my-3">
+          Federal, State, or Local Government Unit
+        </h2>
+        <div class="container graph" id="plot5">
+          <script>
+          anychart.onDocumentReady(function() {
+            var data = [
+              ["Investment Income", 184164.3634],
+              ["Gross Income Members", 0],
+              ["Gross Income Others", 0],
+              ["Net Rental Income", 10847.1581],
+              ["Fundrasing Income", 0],
+              ["Gaming Income", 6460.0763],
+              ["Sales Income", 134370.8903],
+              ["Gross Income from Interest", 226525.4763],
+              ["Other Income", 10567.1989]
+            ];
+
+            var chart = anychart.pie();
+            chart.data(data);
+            chart.sort("desc");
+            chart.legend().position("right");
+            chart.legend().itemsLayout("vertical");
+            chart.container('plot5');
+            chart.draw();
+          });
+          </script>
+        </div>
+        <h2 class="d-flex justify-content-center my-3">
+          Medical Research Organization
+        </h2>
+        <div class="container graph" id="plot6">
+          <script>
+          anychart.onDocumentReady(function() {
+            var data = [
+              ["Investment Income", 1741374.4835],
+              ["Gross Income Members", 0],
+              ["Gross Income Others", 0],
+              ["Net Rental Income", 15369.3956],
+              ["Fundrasing Income", 0],
+              ["Gaming Income", 60.2967],
+              ["Sales Income", 1977.6508],
+              ["Gross Income from Interest", 34060.2772],
+              ["Other Income", 159203.7668]
+            ];
+
+            var chart = anychart.pie();
+            chart.data(data);
+            chart.sort("desc");
+            chart.legend().position("right");
+            chart.legend().itemsLayout("vertical");
+            chart.container('plot6');
+            chart.draw();
+          });
+          </script>
+        </div>
+        <h2 class="d-flex justify-content-center my-3">
+          Organization operated for the benefit of a public college or
+          university
+        </h2>
+        <div class="container graph" id="plot7">
+          <script>
+          anychart.onDocumentReady(function() {
+            var data = [
+              ["Investment Income", 1320091.1143],
+              ["Gross Income Members", 14.3057],
+              ["Gross Income Others", 14.3057],
+              ["Net Rental Income", 65024.0952],
+              ["Fundrasing Income", 20161.1186],
+              ["Gaming Income", 2319.2818],
+              ["Sales Income", 250229.8963],
+              ["Gross Income from Interest", 7852254.7921],
+              ["Other Income", 1985282.1026]
+            ];
+
+            var chart = anychart.pie();
+            chart.data(data);
+            chart.sort("desc");
+            chart.legend().position("right");
+            chart.legend().itemsLayout("vertical");
+            chart.container('plot7');
+            chart.draw();
+          });
+          </script>
+        </div>
+        <h2 class="d-flex justify-content-center my-3">
+          Organization recieving a substantial part of its support
+          from government
+        </h2>
+        <div class="container graph" id="plot8">
+          <script>
+          anychart.onDocumentReady(function() {
+            var data = [
+              ["Investment Income", 93344.1073],
+              ["Gross Income Members", 7.5694],
+              ["Gross Income Others", 7.1587],
+              ["Net Rental Income", 11514.6165],
+              ["Fundrasing Income", 9762.1466],
+              ["Gaming Income", 2094.8308],
+              ["Sales Income", 35736.2635],
+              ["Gross Income from Interest", 618604.8005],
+              ["Other Income", 286915.4306]
+            ];
+
+            var chart = anychart.pie();
+            chart.data(data);
+            chart.sort("desc");
+            chart.legend().position("right");
+            chart.legend().itemsLayout("vertical");
+            chart.container('plot8');
+            chart.draw();
+          });
+          </script>
+        </div>
+        <h2 class="d-flex justify-content-center my-3">
+          Community trust
+        </h2>
+        <div class="container graph" id="plot9">
+          <script>
+          anychart.onDocumentReady(function() {
+            var data = [
+              ["Investment Income", 908259.1902],
+              ["Gross Income Members", 0],
+              ["Gross Income Others", 0],
+              ["Net Rental Income", 6546.8351],
+              ["Fundrasing Income", 7371.3351],
+              ["Gaming Income", 951.2437],
+              ["Sales Income", 4781.2541],
+              ["Gross Income from Interest", 4219085.2849],
+              ["Other Income", 173878.7013]
+            ];
+
+            var chart = anychart.pie();
+            chart.data(data);
+            chart.sort("desc");
+            chart.legend().position("right");
+            chart.legend().itemsLayout("vertical");
+            chart.container('plot9');
+            chart.draw();
+          });
+          </script>
+        </div>
+        <h2 class="d-flex justify-content-center my-3">
+          Section 509(a)(2) organization
+        </h2>
+        <div class="container graph" id="plot10">
+          <script>
+          anychart.onDocumentReady(function() {
+            var data = [
+              ["Investment Income", 68299.0823],
+              ["Gross Income Members", 33.1253],
+              ["Gross Income Others", 21.2843],
+              ["Net Rental Income", 11045.4924],
+              ["Fundrasing Income", 10768.3468],
+              ["Gaming Income", 2136.0626],
+              ["Sales Income", 67647.6660],
+              ["Gross Income from Interest", 861.4183],
+              ["Other Income", 222112.4668]
+            ];
+
+            var chart = anychart.pie();
+            chart.data(data);
+            chart.sort("desc");
+            chart.legend().position("right");
+            chart.legend().itemsLayout("vertical");
+            chart.container('plot10');
+            chart.draw();
+          });
+          </script>
+        </div>
+        <h2 class="d-flex justify-content-center my-3">
+          Organization testing for public safety
+        </h2>
+        <div class="container graph" id="plot11">
+          <script>
+          anychart.onDocumentReady(function() {
+            var data = [
+              ["Investment Income", 77843.5694],
+              ["Gross Income Members", 0],
+              ["Gross Income Others", 0],
+              ["Net Rental Income", 25827.9549],
+              ["Fundrasing Income", 1445.7014],
+              ["Gaming Income", 880.8333],
+              ["Sales Income", 166495.3021],
+              ["Gross Income from Interest", 335.1250],
+              ["Other Income", 2088.2153]
+            ];
+
+            var chart = anychart.pie();
+            chart.data(data);
+            chart.sort("desc");
+            chart.legend().position("right");
+            chart.legend().itemsLayout("vertical");
+            chart.container('plot11');
+            chart.draw();
+          });
+          </script>
+        </div>
+        <h2 class="d-flex justify-content-center my-3">
+          Type I Section 509(a)(3) supporting organization
+        </h2>
+        <div class="container graph" id="plot12">
+          <script>
+          anychart.onDocumentReady(function() {
+            var data = [
+              ["Investment Income", 1009554.6799],
+              ["Gross Income Members", 0],
+              ["Gross Income Others", 0],
+              ["Net Rental Income", 46251.7347],
+              ["Fundrasing Income", 2284.5714],
+              ["Gaming Income", 848.8664],
+              ["Sales Income", 49721.4569],
+              ["Gross Income from Interest", 17543.0468],
+              ["Other Income", 828.4687]
+            ];
+
+            var chart = anychart.pie();
+            chart.data(data);
+            chart.sort("desc");
+            chart.legend().position("right");
+            chart.legend().itemsLayout("vertical");
+            chart.container('plot12');
+            chart.draw();
+          });
+          </script>
+        </div>
+        <h2 class="d-flex justify-content-center my-3">
+          Type II Section 509(a)(3) supporting organization
+        </h2>
+        <div class="container graph" id="plot13">
+          <script>
+          anychart.onDocumentReady(function() {
+            var data = [
+              ["Investment Income", 1259215.3777],
+              ["Gross Income Members", 0],
+              ["Gross Income Others", 0],
+              ["Net Rental Income", 145822.2439],
+              ["Fundrasing Income", 2384.5637],
+              ["Gaming Income", 1545.5364],
+              ["Sales Income", 177525.6566],
+              ["Gross Income from Interest", 14762.7311],
+              ["Other Income", 1164.8743]
+            ];
+
+            var chart = anychart.pie();
+            chart.data(data);
+            chart.sort("desc");
+            chart.legend().position("right");
+            chart.legend().itemsLayout("vertical");
+            chart.container('plot13');
+            chart.draw();
+          });
+          </script>
+        </div>
+        <h2 class="d-flex justify-content-center my-3">
+          Type III--Functionally integrated Section 509(a)(3)
+          supporting organization
+        </h2>
+        <div class="container graph" id="plot14">
+          <script>
+          anychart.onDocumentReady(function() {
+            var data = [
+              ["Investment Income", 1635691.7738],
+              ["Gross Income Members", 0],
+              ["Gross Income Others", 0],
+              ["Net Rental Income", 101751.6295],
+              ["Fundrasing Income", 7505.9409],
+              ["Gaming Income", 389.1394],
+              ["Sales Income", 173976.8935],
+              ["Gross Income from Interest", 23752.2086],
+              ["Other Income", 1764.3305]
+            ];
+
+            var chart = anychart.pie();
+            chart.data(data);
+            chart.sort("desc");
+            chart.legend().position("right");
+            chart.legend().itemsLayout("vertical");
+            chart.container('plot14');
+            chart.draw();
+          });
+          </script>
+        </div>
+        <h2 class="d-flex justify-content-center my-3">
+          Type III--Other Section 509(a)(3) supporting organization
+        </h2>
+        <div class="container graph" id="plot15">
+          <script>
+          anychart.onDocumentReady(function() {
+            var data = [
+              ["Investment Income", 616997.6798],
+              ["Gross Income Members", 0],
+              ["Gross Income Others", 0],
+              ["Net Rental Income", 18201.2391],
+              ["Fundrasing Income", 2354.5882],
+              ["Gaming Income", 2324.7573],
+              ["Sales Income", 11736.5194],
+              ["Gross Income from Interest", 0.0002],
+              ["Other Income", 39.5159]
+            ];
+
+            var chart = anychart.pie();
+            chart.data(data);
+            chart.sort("desc");
+            chart.legend().position("right");
+            chart.legend().itemsLayout("vertical");
+            chart.container('plot15');
+            chart.draw();
+          });
+          </script>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>IRS 501(c)(3) Data Analysis</title>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+  </head>
+  <body class="body">
+    <div class="container">
+      <nav class="navbar-expand-sm navbar-light bg-secondary">
+        <div class="col-4">
+          <a class="navbar-brand" href="/"><h1>IRS 501(c)(3) Data Analysis</h1></a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h2 class="d-flex justify-content-center my-3">
+          Company distribution of # of Employees being paid above 100k
+        </h2>
+        <div class="container graph" id="plot1">
+          <script>
+          anychart.onDocumentReady(function() {
+            var data = [
+              ["0-10%", 169484],
+              ["11-20%", 13],
+              ["21-30%", 0],
+              ["31-40%", 0],
+              ["41-50%", 0],
+              ["51-60", 3],
+              ["61-70%", 0],
+              ["71-80%", 2],
+              ["81-90%", 0],
+              ["91-100%", 1],
+            ];
+        
+            var chart = anychart.pie();
+            chart.data(data);
+            chart.sort("desc");
+            chart.legend().position("right");
+            chart.legend().itemsLayout("vertical");
+            chart.container('plot1');
+            chart.draw();
+          });
+          </script>
+        </div>
+        <p></p>
+        <div class="container graph" id="plot2">
+          <script>
+          anychart.onDocumentReady(function() {
+            var data = [
+              ["0-10%", 169484],
+              ["11-20%", 13],
+              ["21-30%", 0],
+              ["31-40%", 0],
+              ["41-50%", 0],
+              ["51-60", 3],
+              ["61-70%", 0],
+              ["71-80%", 2],
+              ["81-90%", 0],
+              ["91-100%", 1],
+            ];
+
+            chart = anychart.column();
+            var series = chart.column(data);
+            var labels = chart.xAxis().title("Percent of Company Revenue Spent on Officer Compensation")
+            var labels = chart.yAxis().title("Number of Companies")
+            chart.container("plot2");
+            chart.draw();
+          });
+          </script>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

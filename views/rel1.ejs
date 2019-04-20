@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>IRS 501(c)(3) Data Analysis</title>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+  </head>
+  <body class="body">
+    <div class="container">
+      <nav class="navbar-expand-sm navbar-light bg-secondary">
+        <div class="col-4">
+          <a class="navbar-brand" href="/"><h1>IRS 501(c)(3) Data Analysis</h1></a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h2 class="d-flex justify-content-center my-3">
+          Distribution of Companies Spending on Officer Compensation</h2>
+        <div class="container graph" id="plot1">
+          <script>
+          anychart.onDocumentReady(function() {
+            var data = [
+              ["0-10%", 294300],
+              ["11-20%", 116948],
+              ["21-30%", 46497],
+              ["31-40%", 20048],
+              ["41-50%", 9987],
+              ["51-60", 5454],
+              ["61-70%", 3154],
+              ["71-80%", 1759],
+              ["81-90%", 886],
+              ["91-100%", 506],
+              ["100%<", 2453]
+            ];
+
+            var chart = anychart.pie();
+            chart.data(data);
+            chart.sort("desc");
+            chart.legend().position("right");
+            chart.legend().itemsLayout("vertical");
+            chart.container('plot1');
+            chart.draw();
+          });
+          </script>
+        </div>
+        <p></p>
+        <h2 class="d-flex justify-content-center my-3">
+          Distribution of Spending on Officer Compensation vs. Total Revenue
+        </h2>
+        <div class="container graph" id="plot2">
+          <script>
+          anychart.onDocumentReady(function() {
+            var data = [
+              ["0-10%", 294300],
+              ["11-20%", 116948],
+              ["21-30%", 46497],
+              ["31-40%", 20048],
+              ["41-50%", 9987],
+              ["51-60", 5454],
+              ["61-70%", 3154],
+              ["71-80%", 1759],
+              ["81-90%", 886],
+              ["91-100%", 506],
+              ["100%<", 2453]
+            ];
+
+            chart = anychart.column();
+            var series = chart.column(data);
+            var labels = chart.xAxis().title("Percent of Company Revenue Spent on Officer Compensation")
+            var labels = chart.yAxis().title("Number of Companies")
+            chart.container("plot2");
+            chart.draw();
+          });
+          </script>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

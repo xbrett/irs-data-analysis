@@ -1,0 +1,30 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "501(3)(c) data analysis",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xbrett/irs-data-analysis.git"
+  },
+  "author": "Brett Adcock",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xbrett/irs-data-analysis/issues"
+  },
+  "homepage": "https://github.com/xbrett/irs-data-analysis#readme",
+  "dependencies": {
+    "anychart": "^8.5.1",
+    "anychart-nodejs": "^1.3.8",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.3.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "jquery": "^3.4.0",
+    "jsdom": "^14.0.0",
+    "popper.js": "^1.15.0"
+  }
+}
