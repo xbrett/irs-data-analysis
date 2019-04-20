@@ -17,7 +17,7 @@ app.get('/admincompensataion', function (req, res) {
 })
 
 app.get('/incomesource', function (req, res) {
-  res.render('rel2.ejs', {anychart: anychart});
+  res.render('rel2.ejs');
 })
 
 app.get('/totalrevenues', function (req, res) {
